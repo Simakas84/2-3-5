@@ -1,0 +1,24 @@
+Database
+│
+├── Table: movies
+│   ├── id (INTEGER, Primary Key)
+│   ├── title (TEXT, Not Null)
+│   └── year (NUMERIC)
+│
+├── Table: stars
+│   ├── movie_id (INTEGER, Foreign Key -> movies.id)
+│   ├── person_id (INTEGER, Foreign Key -> people.id)
+│
+├── Table: directors
+│   ├── movie_id (INTEGER, Foreign Key -> movies.id)
+│   ├── person_id (INTEGER, Foreign Key -> people.id)
+│
+├── Table: ratings
+│   ├── movie_id (INTEGER, Foreign Key -> movies.id)
+│   ├── rating (REAL, Not Null)
+│   └── votes (INTEGER, Not Null)
+│
+└── Table: people
+    ├── id (INTEGER, Primary Key)
+    ├── name (TEXT, Not Null)
+    └── birth (NUMERIC)

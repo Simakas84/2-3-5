@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "connectionTimeout": 30,
+            "name": "SQL",
+            "database": "movies.db",
+            "username": "Simakkas",
+            "password": "Sandra.1986"
+        }
+    ]
+}
